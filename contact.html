@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – The Golden Crust</title>
+    <link rel="stylesheet" href="GoldenCrust.css">
+</head>
+
+<body>
+
+<header>
+    <img src="Logo.jpg" alt="The Golden Crust Logo" class="logo">
+    <p class="tagline">Boutique Mini‑Tart Pâtisserie • Greenwich Village, NYC</p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavor.html">Tart Flavors</a></li>
+            <li><a href="anatomy.html">Tart Structure</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <a href="mailto:hello@goldencrustnyc.com">hello@goldencrustnyc.com</a>
+        <p>Phone: (212) 555‑1234</p>
+        <p>Location: Greenwich Village, NYC</p>
+    </section>
+
+    <section>
+        <h2>Send a Message</h2>
+
+        <form action="submit-contact.php" method="post">
+
+            <label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" name="phone">
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="button primary">Send</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>Hours: Daily 8 AM – 6 PM</p>
+
+    <address>
+        Greenwich Village, New York City<br>
+        <a href="mailto:hello@goldencrustnyc.com">hello@goldencrustnyc.com</a> • (212) 555‑1234
+    </address>
+
+    <p>&copy; 2026 The Golden Crust</p>
+</footer>
+
+</body>
+</html>

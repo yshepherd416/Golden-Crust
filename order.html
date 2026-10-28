@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tarts – The Golden Crust</title>
+    <link rel="stylesheet" href="GoldenCrust.css">
+</head>
+<body>
+
+<header>
+    <img src="Logo.jpg" alt="The Golden Crust Logo" class="logo">
+    <p class="tagline">Boutique Mini‑Tart Pâtisserie • Greenwich Village, NYC</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flavor.html">Tart Flavors</a></li>
+            <li><a href="anatomy.html">Tart Structure</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+  
+    <section>
+        <h2>Today’s Available Flavors</h2>
+        <p>Freshly baked mini tarts available today.</p>
+
+        <table class="tart-table">
+            <caption>Mini Tart Specifications</caption>
+            <thead>
+                <tr>
+                    <th>Tart Flavor</th>
+                    <th>Size</th>
+                    <th>Price (Each)</th>
+                    <th>Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Classic Egg Tart</td>
+                    <td>2.5 in</td>
+                    <td>$3.50</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Hong Kong Tart</td>
+                    <td>2.5 in</td>
+                    <td>$3.75</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>Black Sesame Tart</td>
+                    <td>2.5 in</td>
+                    <td>$4.00</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>NY Cheesecake Tart</td>
+                    <td>2.5 in</td>
+                    <td>$4.25</td>
+                    <td>78</td>
+                </tr>
+                <tr>
+                    <td>Salted Chocolate Tart</td>
+                    <td>2.5 in</td>
+                    <td>$4.25</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td>Caramel Apple Tart</td>
+                    <td>2.5 in</td>
+                    <td>$4.50</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td>Lemon Tart (Seasonal)</td>
+                    <td>2.5 in</td>
+                    <td>$4.00</td>
+                    <td>78</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Fresh batches are baked throughout the day. Stock resets each morning.</p>
+    </section>
+
+    
+    <section>
+        <h2>How Ordering Works</h2>
+        <p>Order today and pick up between 12 PM and 6 PM.</p>
+
+        <ol>
+            <li>Select your flavors from today’s list.</li>
+            <li>Enter your quantities and submit your order.</li>
+            <li>Pick up at your chosen time.</li>
+        </ol>
+
+        <ul>
+            <li>Same‑day orders only.</li>
+            <li>Walk‑ins welcome while supplies last.</li>
+        </ul>
+    </section>
+
+    
+    <section>
+        <h2>Place Your Order</h2>
+
+        <form action="submit-order.php" method="post">
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+
+                <p>Select your quantities below.</p>
+
+                <label for="classic">Classic Egg Tart</label>
+                <input type="number" id="classic" name="classic" min="0" value="0">
+
+                <label for="hongkong">Hong Kong Tart</label>
+                <input type="number" id="hongkong" name="hongkong" min="0" value="0">
+
+                <label for="black-sesame">Black Sesame Tart</label>
+                <input type="number" id="black-sesame" name="black-sesame" min="0" value="0">
+
+                <label for="ny-cheesecake">NY Cheesecake Tart</label>
+                <input type="number" id="ny-cheesecake" name="ny-cheesecake" min="0" value="0">
+
+                <label for="salted-chocolate">Salted Chocolate Tart</label>
+                <input type="number" id="salted-chocolate" name="salted-chocolate" min="0" value="0">
+
+                <label for="caramel-apple">Caramel Apple Tart</label>
+                <input type="number" id="caramel-apple" name="caramel-apple" min="0" value="0">
+
+                <label for="lemon">Lemon Tart (Seasonal)</label>
+                <input type="number" id="lemon" name="lemon" min="0" value="0">
+
+                <label for="pickup">Pickup Time</label>
+                <input type="time" id="pickup" name="pickup" min="12:00" max="18:00" required>
+
+            </fieldset>
+
+            <button type="submit" class="button primary">Submit Order</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p><strong>Hours:</strong> Daily 8 AM – 6 PM</p>
+
+    <address>
+        Greenwich Village, New York City<br>
+        <a href="mailto:hello@goldencrustnyc.com">hello@goldencrustnyc.com</a> • (212) 555‑1234  
+    </address>
+
+    <p>&copy; 2026 The Golden Crust</p>
+</footer>
+
+</body>
+</html>
